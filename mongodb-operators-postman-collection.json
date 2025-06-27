@@ -1,0 +1,344 @@
+{
+  "info": {
+    "_postman_id": "e666bbc2-c4ce-476f-be74-47464f503bfc",
+    "name": "MongoDB Operators API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "12242192"
+  },
+  "item": [
+    {
+      "name": "Comparison Operators",
+      "item": [
+        {
+          "name": "Equal Operator ($eq)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/eq/LS0009100"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Not Equal ($ne)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/ne/LS0009100"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Less Than ($lt)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/lt/1000"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Less Than Equal ($lte)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/lte/30000"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Greater Than Equal ($gte)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/gte/35000"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "In Operator ($in)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/in/dairy,meat"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Not In Operator ($nin)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comparison/nin"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"field\": \"category\",\n  \"values\": [\"dairy\", \"meat\"]\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Logical Operators",
+      "item": [
+        {
+          "name": "AND Operator ($and)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/logical/and"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "OR Operator ($or)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/logical/or"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "NOR Operator ($nor)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/logical/nor"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "NOT Operator ($not)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/logical/not"
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Element Operators",
+      "item": [
+        {
+          "name": "Element Operators",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/element/exists/category"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Type Operator ($type)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/element/type/number"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Copy Exists with Condition",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/element/exists-condition"
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Array Operators",
+      "item": [
+        {
+          "name": "All Operator ($all)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/array/all"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Size Operator ($size)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/array/size/3"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Element Match ($elemMatch)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/array/elemMatch/category/dairy"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Array Field Query",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/array/query"
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Evaluation Operators",
+      "item": [
+        {
+          "name": "Evaluation Operators",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/evaluation/where/price/gt/10"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Modulo Operator ($mod)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/evaluation/mod/quantity/10/0"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Text Search ($text)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/evaluation/text/Milk"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Expression Operator ($expr)",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/evaluation/expr"
+            },
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"expression\": { \"$gt\": [\"$quantity\", \"$price\"] }\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Comment Operator",
+      "item": [
+        {
+          "name": "Comment Operator ($comment)",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comment/inventory/Milk"
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Employee Query with Comment",
+          "request": {
+            "method": "GET",
+            "header": [],
+            "url": {
+              "raw": "{{baseUrl}}/api/comment/employees/Store"
+            }
+          },
+          "response": []
+        }
+      ]
+    },
+    {
+      "name": "Seed Database",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/data/seed"
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Data",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/api/data/all"
+        }
+      },
+      "response": []
+    }
+  ]
+}
